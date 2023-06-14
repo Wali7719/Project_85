@@ -19,7 +19,7 @@ function add() {
 
 	greencar_imgTag = new Image();
 	greencar_imgTag.onload = uploadgreencar;
-	grrencar_imgTag.src = grrencar_image;
+	greencar_imgTag.src = grrencar_image;
 }
 
 function uploadBackground() {
@@ -29,7 +29,7 @@ ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
 
 function uploadgreencar() {
 	//Define function ‘uploadgreencar’.
-	ctx.drawImage(grrencar_imgTag, greencar_x, greencar_y, greencar_width, greencar_height);
+	ctx.drawImage(greencar_imgTag, greencar_x, greencar_y, greencar_width, greencar_height);
 	
 }
 
