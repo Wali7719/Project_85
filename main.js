@@ -11,6 +11,7 @@ greencar_image = "car2.png";
 //Set initial position for a car image.
 greencar_x = 5;
 greencar_y = 225;
+greencar_imgTag = "";
 function add() {
 	//upload car, and background images on the canvas.
 	background_imgTag = new Image();
@@ -84,9 +85,9 @@ function up()
 function down()
 {
 	//Define function to move the car downward
-	if(greencar_y >=0)
+	if(greencar_y <=300)
 	{
-		greencar_y = greencar_y - 10;
+		greencar_y = greencar_y + 10;
 		console.log("When down arrow is pressed, x = "+ greencar_x + "| y = " +greencar_y);
 		uploadBackground();
 		uploadgreencar();
@@ -108,9 +109,9 @@ function left()
 function right()
 {
 	//Define function to move the car right side
-	if(greencar_x >=0)
+	if(greencar_x <=700)
 	{
-		greencar_x = greencar_x - 10;
+		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed, x = "+ greencar_x + "| y = " +greencar_y);
 		uploadBackground();
 		uploadgreencar();
